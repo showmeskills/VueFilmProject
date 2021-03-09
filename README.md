@@ -1,4 +1,6 @@
 # webpack-vue-film-app
+Project Introduction
+
 
 ## Project setup
 ```
