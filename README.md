@@ -1,12 +1,15 @@
 # webpack-vue-film-app
 ## Project Introduction
-```
-The film project is a SPA project which is divied into front-end and back-end, and it is a moblie application
 
-It includes movies brief introduction, movies comment, movies price, cinemas location, online or counter booking, user center and user service components.
+The film project is a SPA project which is divied into front-end and back-end, 
+and it is a moblie application
 
-Tech in front-end: Vue2, Vue router, Vuex, Webpack, Axios, Mint-UI, ES6, Swiper, Best Scroll, Iconfont, flexible.js and fastclick.js
-```
+It includes movies brief introduction, movies comment, movies price, 
+cinemas location, online or counter booking, user center and user service components.
+
+Tech in front-end: Vue2, Vue router, Vuex, Webpack, Axios, Mint-UI, ES6, 
+Swiper, Best Scroll, Iconfont, flexible.js and fastclick.js
+
 
 ##Project Dir tree
 ```
