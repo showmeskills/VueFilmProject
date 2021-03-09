@@ -1,0 +1,33 @@
+/*tabbar start*/
+nav{
+    position:fixed;
+    bottom:0rem;
+    left: 0rem;
+    width:100vw;
+    background-color: white;
+    z-index: 10;
+    ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height:1.333333rem;
+        li{
+            width:25vw;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 0.166667rem;
+            .iconfont{
+                font-size: 0.566667rem;
+                font-weight:450;
+            }
+        }
+    }
+}
+.myactive,.tabbar_active{
+    color:rgb(255,107,38);
+    transition:.5s;
+}
+/*tabbar end*/
+

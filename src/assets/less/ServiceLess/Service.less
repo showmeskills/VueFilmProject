@@ -1,0 +1,46 @@
+/* service start*/
+@backgroundColor:#fff;
+@size:100%;
+.Service{
+    width: @size;
+    background-color: @backgroundColor;
+    .service_container{
+        /*service advertisement start*/
+        .service_advertisement{
+            img{
+                width:@size;
+                height:@size;
+            }
+        }
+        /*service advertisement end*/
+        /*service list start*/
+        .service_list{
+            ul{
+                li{
+                    margin-top:.333333rem;
+                    margin-bottom:.333333rem;
+                    position:relative;
+                    &:after{
+                        content: '';
+                        position:absolute;
+                        bottom:-0.223333rem;
+                        left:10%;
+                        background-color: rgba(0, 0, 0, .1);
+                        width:80%;
+                        height:.006667rem;
+                        text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                        img{
+                            width:@size;
+                            height:@size;
+                        }
+                    }
+                }
+            }
+        }
+        /*service list end*/
+    }
+}
+/* service end*/

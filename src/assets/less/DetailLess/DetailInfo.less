@@ -1,0 +1,79 @@
+/*film_detail start*/
+.film_detail{
+    padding:.32rem .4rem;
+    background-color: #fff;
+    .film_name{
+        color:#191a1b;
+        font-size:.426667rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .name{
+            color: #191a1b;
+            font-size: .38rem;
+            height: .64rem;
+            line-height: .64rem;
+            margin-right: .186667rem;
+        }
+        .type{
+            font-size: .24rem;
+            color: #fff;
+            background-color: #d2d6dc;
+            height: .373333rem;
+            line-height: .373333rem;
+            padding: 0 .053333rem;
+            border-radius: .053333rem;
+            display: inline-block;
+        }
+        .grade{
+            position: absolute;
+            right:0;
+            text-align: right;
+            color: #ffb232;
+            font-size: .48rem;
+            font-style: italic;
+        }
+    }
+    .film_category,
+    .film_premier_time,
+    .film_nation_runtime{
+        font-size:.296667rem;
+        color:#797d82;
+        margin-top:.123333rem;
+    }
+    /* film_synopsis start */
+    .film_synopsis_hidden{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        font-size:.306667rem;
+        color:#797d82;
+        height:.65333rem;
+        min-height: .70333rem;
+        margin-top:.32rem;
+        transition: height .5s ease;
+    }
+    .film_synopsis{
+        max-height:2.666667rem;
+        height:2.466667rem;
+        font-size:.306667rem;
+        color:#797d82;
+        margin-top:.32rem;
+        transition: all .5s ease;
+    }   
+    /* film_synopsis end */
+    .toggle {
+        text-align: center;
+        display: block;
+        height: auto;
+        width: .533333rem;
+        margin: auto;
+        line-height: normal;
+       i{
+           font-size:.346667rem;
+           color: #797d82;
+           font-weight: 450;
+       }
+    }
+}
+/*film_detail end*/

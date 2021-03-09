@@ -1,0 +1,110 @@
+.padding(@left,@right){
+    padding-left:@left;
+    padding-right:@right;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-top: 1.533333rem;
+    position: relative;
+}
+.text(){
+    position: absolute;
+    font-size:.396667rem;
+    color:#191a1b;
+}
+.input(){
+    width:76%;
+    height:.866667rem;
+    border:none;
+    font-size:.426667rem;
+}
+.icon(){
+    position: relative;
+    right: .733333rem;
+    font-size:.366667rem;
+    color:rgb(189,192,197);
+}
+
+/*login start*/
+.Login{
+    /*logo start*/
+    .logo{
+        margin: auto;
+        margin-top: 2.366667rem;
+        position: relative;
+        height:1.63333rem;
+        width: 1.63333rem;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    /*logo end*/
+
+    /*login form start*/
+    .login_form{
+        .phone{
+            .padding(.4rem,.4rem);
+            .number{
+               .text();
+            }
+            input{
+                .input();
+                // border:none
+            }
+            i{
+                .icon();
+            }
+            .errTip{
+                position: absolute;
+                top:.666667rem;
+                font-size:.166667rem;
+                color: rgb(255,95,22);
+                margin-top:.566667rem;
+            }
+            /*code start*/
+            .phone_code{
+                position: absolute;
+                top: 50%;
+                transform:translateY(-50%);
+                right: .666667rem;
+                background-color: #fff;
+                color: #bdc0c5;
+                font-size: .373333rem;
+            }
+            /*code end*/
+        }
+        .code{  
+            .padding(.4rem,.4rem);
+            .code_text{
+                .text();
+            }
+            input{
+                .input();
+            }
+            i{
+                .icon();
+            }
+        }
+    }
+   
+    /*btn start*/
+    .btn{
+        width:90%;
+        margin:auto;
+        margin-top:2.366667rem;
+        background-color: rgb(255,95,22);
+        text-align: center;
+        border-radius: .133333rem;
+        button{
+            border: none;
+            color:rgba(255,255,255,.3);
+            background-color: rgb(255,95,22);
+            height:5.5vh;
+            font-size:.426667rem;
+        }
+    }
+    /*btn end*/
+
+
+}

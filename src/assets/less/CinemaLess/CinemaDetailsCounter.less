@@ -1,0 +1,69 @@
+.Cinema_details_counter{
+    height: 80vh;
+    overflow:hidden;
+    position: relative;
+    ul{
+        li{
+            width:100%;
+            margin-top:.666667rem;
+            a{
+                text-decoration: none;
+                .cinema_counter_wrap{
+                    display: flex;
+                    justify-content:space-around;
+                    align-items:center;
+                    .cinema_counter_details{
+                        width:70%;
+                        text-align:left;
+                        .cinema_counter_name{
+                            color: #191a1b;
+                            font-size: .4rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                        .cinema_counter_type{
+                            color: #797d82;
+                            font-size: .29rem;
+                            margin-top: .163333rem;
+                            position: relative;
+                            & span:first-child:after{
+                                content:'';
+                                position:absolute;
+                                top:0;
+                                left:1.306667rem;
+                                width:.029667rem;
+                                height:.29rem;
+                                background-color: #797d82;
+                            }
+                            & span:last-child{
+                                margin-left:.033333rem;
+                            }
+                        }
+                        .cinema_counter_address{
+                            color: #797d82;
+                            font-size: .29rem;
+                            margin-top: .163333rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                    .other_wrap{
+                        text-align: center;
+                        .location{
+                            color: #797d82;
+                            font-size:.426667rem;   
+                        }
+                        .distance{
+                            margin-top: .163333rem;
+                            font-weight: 400;   
+                            font-size: .293333rem;
+                            color: #797d82;      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

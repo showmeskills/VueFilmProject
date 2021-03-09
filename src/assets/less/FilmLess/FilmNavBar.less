@@ -1,0 +1,36 @@
+/* nav bar start*/
+.nav_bar{
+    list-style: none;
+    display:flex;
+    text-align: center;
+    li{
+        width:50%;
+        height:1.333333rem;
+        line-height:1.333333rem;
+        font-size: .303333rem;
+        background-color: #fff;
+        z-index: 30;
+        span{
+            display:inline-block;
+            height:100%;
+        }
+    }
+}
+/* router-link with Pseudo classes start*/
+.nav_active{
+    position: relative;
+    color:#ff5f16;
+    transition:all .3s;
+    &:after{
+        content:' ';
+        width:1.463333rem;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        border-bottom:2px solid rgb(255,95,22);
+    }
+/* router-link with Pseudo classes end*/
+}
+/* nav bar end*/
+

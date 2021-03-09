@@ -1,0 +1,112 @@
+<template>
+  <div class="service_list">
+    <ul>
+      <li v-for="list in serviceList" :key="list.id">
+        <a :href='list.url'>
+            <img :src="list.img" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+    data(){
+        return{
+            serviceList:[
+                {
+                    id:0,
+                    img:require('../../assets/img/serviceImg/ad1.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936690&idx=1&sn=eefb6105f0cfa4bba7571b3bf6c297f6&chksm=bd0aaf8d8a7d269b7c7f2a59121fd07e319c6fd60cad87ca1e4aa71d7855ba3ef204804b7824&token=1458959974&lang=zh_CN#rd'
+                },
+                {
+                    id:1,
+                    img:require('../../assets/img/serviceImg/ad2.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936567&idx=1&sn=8ac574ddbc910eb541fbecf67f1ef651&chksm=bd0aaf088a7d261e2c38d3dc584fcffad3c10070d2c5b9428110679c2f1ee81a38199fe88a0e&token=1458959974&lang=zh_CN#rd'
+                },
+                {
+                    id:2,
+                    img:require('../../assets/img/serviceImg/ad3.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936468&idx=1&sn=8cc44354ead7442923f4fdbccc8c96f6&chksm=bd0aaf6b8a7d267df06573e2188ffe1a522da4efc0c9115d0a9c52ab79b51c97d2aa0e5b956a&token=1458959974&lang=zh_CN#rd'
+                },
+                 {
+                    id:3,
+                    img:require('../../assets/img/serviceImg/ad4.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936468&idx=2&sn=142030793c04701086f0f1852a6d505c&chksm=bd0aaf6b8a7d267df13a3baf7ed4d491ddfef6b5592542058eaf8d967bdf4f7262806e11a475&token=1458959974&lang=zh_CN#rd'
+                },
+                 {
+                    id:4,
+                    img:require('../../assets/img/serviceImg/ad5.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936388&idx=1&sn=5a51eac6c8fafa8926c617f68d467fdc&chksm=bd0aaebb8a7d27add025e535b72ed1d0bcf56c0e83b12bf33c5bdcd1c2ec2f6983028cb1f7b7&token=1458959974&lang=zh_CN#rd'
+                },
+                 {
+                    id:5,
+                    img:require('../../assets/img/serviceImg/ad6.jpg'),
+                    url:'https://mp.weixin.qq.com/s?__biz=MjM5NzEzNTEyMA==&mid=2652936349&idx=1&sn=e069e9d0f1e2bdcc617048ee22ace100&chksm=bd0aaee28a7d27f47d107ad2049afdaa2416d7062099967428cabfc51b909d8938ff4a959964&token=1670154165&lang=zh_CN#rd'
+                },
+                 {
+                    id:6,
+                    img:require('../../assets/img/serviceImg/ad7.jpg'),
+                    url:'https://mp.weixin.qq.com/s/1LJNfJfWBOLnrEUqqlAk3Q'
+                },
+                 {
+                    id:7,
+                    img:require('../../assets/img/serviceImg/ad8.jpg'),
+                    url:'https://mp.weixin.qq.com/s/4FGJja9MjCeL_lYUJmclkQ'
+                },
+                 {
+                    id:8,
+                    img:require('../../assets/img/serviceImg/ad9.jpg'),
+                    url:'https://mp.weixin.qq.com/s/veF_gkORY_ui8WtObXAJQw',
+                },
+                {
+                    id:9,
+                    img:require('../../assets/img/serviceImg/ad10.jpg'),
+                    url:'https://mp.weixin.qq.com/s/rw806QOZdUG4BUlPu5rl8Q',
+                },
+                 {
+                    id:10,
+                    img:require('../../assets/img/serviceImg/ad11.jpg'),
+                    url:'',
+                },
+                {
+                    id:11,
+                    img:require('../../assets/img/serviceImg/ad12.jpg'),
+                    url:'https://mp.weixin.qq.com/s/9zyiNq2K64m31iKmq_-m0A',
+                },
+                 {
+                    id:12,
+                    img:require('../../assets/img/serviceImg/ad13.jpg'),
+                    url:'https://mp.weixin.qq.com/s/azEBwAP3iCnBDp1JT0JSeQ',
+                },
+                {
+                    id:13,
+                    img:require('../../assets/img/serviceImg/ad14.jpg'),
+                    url:'https://mp.weixin.qq.com/s/9o4vaYZe_nkMUmb0Yey3a',
+                },
+                {
+                    id:14,
+                    img:require('../../assets/img/serviceImg/ad15.jpg'),
+                    url:'https://mp.weixin.qq.com/s/vfxBeTiXW9ZaPACkCdCLeg',
+                },
+                {
+                    id:15,
+                    img:require('../../assets/img/serviceImg/ad16.jpg'),
+                    url:'https://mp.weixin.qq.com/s/KtHI0pqXT37K_VJpOhIcDw',
+                },
+                  {
+                    id:16,
+                    img:require('../../assets/img/serviceImg/ad17.jpg'),
+                    url:'https://mp.weixin.qq.com/s/dESyU832VycEcttMSmDpt',
+                },
+                {
+                    id:17,
+                    img:require('../../assets/img/serviceImg/ad18.jpg'),
+                    url:'https://mp.weixin.qq.com/s/1ISEejFpgCyPxqlJ9NjCZ',
+                },
+            ]
+        }
+    }
+};
+</script>

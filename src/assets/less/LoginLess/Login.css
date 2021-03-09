@@ -1,0 +1,104 @@
+/*login start*/
+.Login {
+  /*logo start*/
+  /*logo end*/
+  /*login form start*/
+  /*btn start*/
+  /*btn end*/
+}
+.Login .logo {
+  margin: auto;
+  margin-top: 2.366667rem;
+  position: relative;
+  height: 1.63333rem;
+  width: 1.63333rem;
+}
+.Login .logo img {
+  width: 100%;
+  height: 100%;
+}
+.Login .login_form .phone {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.533333rem;
+  position: relative;
+  /*code start*/
+  /*code end*/
+}
+.Login .login_form .phone .number {
+  position: absolute;
+  font-size: 0.396667rem;
+  color: #191a1b;
+}
+.Login .login_form .phone input {
+  width: 76%;
+  height: 0.866667rem;
+  border: none;
+  font-size: 0.426667rem;
+}
+.Login .login_form .phone i {
+  position: relative;
+  right: 0.733333rem;
+  font-size: 0.366667rem;
+  color: #bdc0c5;
+}
+.Login .login_form .phone .errTip {
+  position: absolute;
+  top: 0.666667rem;
+  font-size: 0.166667rem;
+  color: #ff5f16;
+  margin-top: 0.566667rem;
+}
+.Login .login_form .phone .phone_code {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.666667rem;
+  background-color: #fff;
+  color: #bdc0c5;
+  font-size: 0.373333rem;
+}
+.Login .login_form .code {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.533333rem;
+  position: relative;
+}
+.Login .login_form .code .code_text {
+  position: absolute;
+  font-size: 0.396667rem;
+  color: #191a1b;
+}
+.Login .login_form .code input {
+  width: 76%;
+  height: 0.866667rem;
+  border: none;
+  font-size: 0.426667rem;
+}
+.Login .login_form .code i {
+  position: relative;
+  right: 0.733333rem;
+  font-size: 0.366667rem;
+  color: #bdc0c5;
+}
+.Login .btn {
+  width: 90%;
+  margin: auto;
+  margin-top: 2.366667rem;
+  background-color: #ff5f16;
+  text-align: center;
+  border-radius: 0.133333rem;
+}
+.Login .btn button {
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #ff5f16;
+  height: 5.5vh;
+  font-size: 0.426667rem;
+}
