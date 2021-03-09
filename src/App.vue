@@ -3,7 +3,7 @@
     <!-- botton nav start -->
     <tabbar v-show='isTabbarShow' ></tabbar>
     <!-- botton nav end -->
-    <!-- animation start -->
+    <!-- animation start  -->
     <transition name="fade">
       <router-view/>
     </transition>
