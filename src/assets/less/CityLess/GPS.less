@@ -1,0 +1,23 @@
+.position(@marginTop,@marginLeft,@fontSize,@color){
+    margin-top:@marginTop;
+    margin-left:@marginLeft;
+    font-size:@fontSize;
+    color:@color;
+};
+
+.GPS{
+    background-color: #fff;
+    height:8.5vh;
+    .GPS_title{
+        .position(.4rem,.266667rem,.326667rem,#797d82);
+    }
+    .GPS_city{
+        .position(.4rem,.266667rem,.326667rem,#191a1b);
+        border-radius: .25rem;
+        background-color: #f4f4f4;
+        height:.8rem;
+        line-height:.8rem;
+        text-align: center;
+        width:25%;
+    }
+}

@@ -1,0 +1,26 @@
+.position(@marginTop,@marginLeft,@fontSize,@color){
+    margin-top:@marginTop;
+    margin-left:@marginLeft;
+    font-size:@fontSize;
+    color:@color;
+};
+.hot_city{
+    margin-top:.6rem;
+    background-color: #fff;
+    height:8.5vh;
+    .allCities{
+        .position(.4rem,.266667rem,.326667rem,#797d82);
+    }
+    .hot_city_list{   
+        li{
+            float: left;
+            .position(.4rem,.266667rem,.326667rem,#797d82);
+            border-radius: .25rem;
+            background-color: #f4f4f4;
+            height:.8rem;
+            line-height:.8rem;
+            text-align: center;
+            width:25%;
+        }
+    }
+}

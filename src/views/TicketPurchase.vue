@@ -1,6 +1,6 @@
 <template>
     <div>
-        1111
+        {{this.$route.params}}
     </div>
 </template>
 

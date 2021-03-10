@@ -42,7 +42,9 @@
           </p>
         </div>
         <!--  nowplaying details end -->
-        <div class="tickets_purchase" @click.stop="purchase(data.filmId)">
+        <div class="tickets_purchase" 
+        @click.stop="purchase(data.filmId)"
+        >
           购票
         </div>
       </li>

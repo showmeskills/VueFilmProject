@@ -1,6 +1,6 @@
 <template>
     <mt-index-list class="city_index" :infinite-scroll-disable="true">
-        <div>
+        <div class="city_index_header">
           <GPS/>
           <HotCity/>
         </div>
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import GPS from "@/components/City/GPS.vue";
-import HotCity from "@/components/City/HotCity.vue";
+import GPS from "@/components/City/CityListComponents/GPS.vue";
+import HotCity from "@/components/City/CityListComponents/HotCity.vue";
 import '@/assets/less/CityLess/CityList.less';
 import {mapState,mapActions} from 'vuex';
 export default {

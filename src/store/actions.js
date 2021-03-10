@@ -9,8 +9,7 @@ const actions = {
         axios({
             url:'gateway?type=2&cityId=440300&k=3860799',
             headers: {
-                "X-Client-Info":
-                  '{"a":"3000","ch":"1002","v":"5.0.4","e":"16132970752253105483743233"}',
+                "X-Client-Info": '{"a":"3000","ch":"1002","v":"5.0.4","e":"16132970752253105483743233"}',
                 "X-Host": " mall.cfg.common-banner",
             },
         })
