@@ -14,6 +14,7 @@
 <script>
 import tabbar from '@/components/Tabbar/Tabbar.vue';
 import '@/assets/less/RouterAmination.less';
+import '@/assets/css/nor.css';
 import {mapState} from 'vuex';
 export default {
   name:'app',

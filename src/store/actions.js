@@ -104,7 +104,9 @@ const actions = {
             },
         })
         .then(_=>{
-            store.commit(TYPE.M_CITY_LIST,_.data.data.cities)
+            store.commit(TYPE.M_CITY_LIST,_.data.data.cities);
+            console.log(_.data.data.cities)
+            storageUtils.saveAllCity(_.data.data.cities)
         })
     },
     A_GPSCITY_ID({commit},city){

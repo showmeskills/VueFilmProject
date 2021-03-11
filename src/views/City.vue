@@ -1,8 +1,11 @@
 <template>
  <div class="City">
    <CityHeader/>
-   <CityHeaderBar/>
-   <CityList ref="myCtiy"/>
+
+   <CityHeaderBar @clearSearch='clearSearch' @startSearch='startSearch'/>
+
+   <CityList ref="myCtiy" v-if='result'/>
+
  </div>
 </template>
 
@@ -14,6 +17,11 @@ import { mapState,mapActions,mapMutations } from "vuex";
 import '@/assets/less/CityLess/City.less';
 export default {
   name: "City",
+  data(){
+    return{ 
+      result:true,
+    }
+  },
   components: {
     CityHeader,
     CityList,
@@ -23,14 +31,24 @@ export default {
     this.HIDE_TABBAR_MUTATION(false);
   },
   mounted() {
-    this.$refs.myCtiy.$el.height = document.documentElement.clientHeight;
+    if(this.result){
+      this.$refs.myCtiy.$el.height = document.documentElement.clientHeight;
+    }
      if (this.cityList.length === 0) {
       this.A_CITY_LIST();
     }
   },
   methods:{
     ...mapMutations(['SHOW_TABBAR_MUTATION','HIDE_TABBAR_MUTATION']),
-    ...mapActions(['A_CITY_LIST'])
+    ...mapActions(['A_CITY_LIST']),
+    /*search city start */
+    startSearch(value){
+      this.result = value;
+    },
+    clearSearch(value){
+      this.result = value;
+    },
+    /*search city end */
   },
   computed: {
     ...mapState(["cityList"]),

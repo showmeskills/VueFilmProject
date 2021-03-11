@@ -2,7 +2,8 @@ const CITY_ID = 'city_id'
 const CITY_NAME ='city_name';
 const FILTER_DISTRICT = 'filterDistrict';
 const FILTER_COUNTER= 'filterCounter';
-const USERNAME = 'userName'
+const USERNAME = 'userName';
+const AllCity = 'allCity';
 export default {
     saveCityId(cityId){
         return window.localStorage.setItem(CITY_ID, cityId);
@@ -33,5 +34,11 @@ export default {
     },
     readUserName(){
         return window.localStorage.getItem(USERNAME);
+    },
+    saveAllCity(cities){
+        return window.localStorage.setItem(AllCity,JSON.stringify(cities))
+    },
+    readAllCity(){
+        return JSON.parse(window.localStorage.getItem(AllCity) || '[]');
     }
 }
