@@ -2,7 +2,7 @@
     <div class="film_nav_top">
         <!-- film_Top_header start -->
         <div class="left">
-            <span>{{readCityName}}</span>
+            <span @click.stop="$router.push('/city')">{{readCityName}}</span>
             <img :src="require('@/assets/img/small_arrow.png')" alt="">
         </div>
         <div class="title">

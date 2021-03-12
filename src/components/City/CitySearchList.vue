@@ -5,12 +5,15 @@
                {{city.name}}
             </li>
         </ul>
+        <CityEmptySearch v-if='result'/>
     </div>
 </template>
 
 <script>
 import '@/assets/less/CityLess/CitySearchList.less';
 import storageUtils from"@/utils/cityStorage.js";
+
+
 export default {
     name:'City_search_list',
     props:{
@@ -22,6 +25,7 @@ export default {
         }
     },
     computed:{
+        //filter city name and spellings
         filterCities(){
            let {searchCity,cityList} = this;
            let arr = [...cityList];
@@ -30,10 +34,10 @@ export default {
                arr = arr.filter(item=> searchReg.test(searchCity)? item.pinyin.indexOf(searchCity) !== -1 :item.name.indexOf(searchCity) !== -1);
            }
            if(arr.length>0){
-            this.$bus.$emit('switch',true);
+            this.$bus.$emit('switchHide',false);
                 return arr;
            }else{
-            this.$bus.$emit('switch',false);
+            this.$bus.$emit('switchShow',true);
                 return arr;
            }
         },
