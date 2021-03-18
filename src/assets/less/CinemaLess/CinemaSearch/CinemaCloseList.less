@@ -1,0 +1,41 @@
+@fontSize:.383333rem;
+@border-box:border-box;
+.flex(){
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.Cinema_closed_list{
+    margin-top:.86667rem;
+    margin-left:.4rem;
+    .cinema_list_title{
+        font-size:@fontSize;
+        color:#bdc0c5;
+    }
+    .cinema_list{
+        margin-top:.266667rem;
+        background-color:block;
+        ul{
+            .flex();
+            li{
+                text-align: center;
+                padding-bottom: .266667rem;
+                padding-right: .266667rem;
+                -webkit-box-sizing: @border-box;
+                box-sizing:@border-box;
+                float: left;
+                .ciname_list_detail{
+                    height: .8rem;
+                    background-color: hsla(0,0%,95.7%,.6);
+                    line-height: .373333rem;
+                    border-radius: .08rem;
+                    -webkit-box-sizing: @border-box;
+                    box-sizing: @border-box;
+                    font-size: .346667rem;
+                    padding: .213333rem .32rem;
+                }
+            }
+        }
+    }
+}

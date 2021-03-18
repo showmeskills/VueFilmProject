@@ -48,7 +48,6 @@ export default {
   },
   methods:{
     clearSearch(){
-      console.log(1)
       this.searchCity=''
       this.$emit('clearSearch',true)
       this.result = false;

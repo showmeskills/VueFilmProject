@@ -1,0 +1,41 @@
+@bcColor:rgb(244,244,244);
+@heigh:4.5vh;
+@border:none;
+@color:#bdc0c5;
+@fontSize:.326667rem;
+.CinemaSearch{
+    width:100%;
+    .cinema_search_bar{
+        margin-top:.233333rem;
+        margin-left:.266667rem;
+        border-radius: .08rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-home_search{
+            font-size:@fontSize;
+            height:@heigh;
+            background-color:@bcColor;
+            line-height:@heigh;
+            color:@color;
+        }
+        input{
+            width:80%;
+            height:@heigh;
+            border:@border;
+            background-color:@bcColor;
+            text-indent: .133333rem;    
+        }
+        input::-webkit-input-placeholder {
+            color: #C0C0C0;
+            font-size: @fontSize;
+        }
+        button{
+            width:10%;
+            height:@heigh;
+            border:@border;
+            background-color: #fff;
+            font-size:@fontSize;
+        }
+    }
+}

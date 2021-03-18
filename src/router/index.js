@@ -10,7 +10,7 @@ import Login from '@/views/Login.vue'
 import Service from '@/views/Service.vue'
 import City from '@/views/City.vue'
 import TicketPurchase from '@/views/TicketPurchase.vue'
-import CinemaSearch from '@/views/CinemaSearch.vue'
+import CinemaSearch from '@/components/Cinema/CinemaSearch.vue'
 
 Vue.use(VueRouter)
 

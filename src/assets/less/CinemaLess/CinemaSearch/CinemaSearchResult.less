@@ -1,0 +1,33 @@
+.Cinema-search-result{
+    .Cinema-search-has-no-result{
+        z-index: 3004;
+        position: absolute;
+        top: 49px;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        height: calc(100vh - 49px);
+        width: 100vw;
+        overflow-y: auto;
+        .Cinema-search-empty-result{
+            position: absolute;
+            top: 107px;
+            width: 100%;
+            text-align: center;
+            img{
+                width: 90px;
+                margin: auto;
+            }
+            p:nth-child(2){
+                color: #bdc0c5;
+                font-size: 14px;
+                margin: 0;
+            }
+            p:nth-child(3){
+                color: #bdc0c5;
+                font-size: 11px;
+                padding: 0 22vw;
+            }
+        }
+    }
+}

@@ -5,14 +5,12 @@
                {{city.name}}
             </li>
         </ul>
-        <CityEmptySearch v-if='result'/>
     </div>
 </template>
 
 <script>
 import '@/assets/less/CityLess/CitySearchList.less';
 import storageUtils from"@/utils/cityStorage.js";
-
 
 export default {
     name:'City_search_list',
